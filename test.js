@@ -31,6 +31,7 @@ class CurrentTime extends HTMLElement {
         this._timer = window.setInterval(() => {
             this.innerText = new Date().toLocaleString(this.locale);
         }, 1000);
+        consol.log('timer : '+ this.locale);
     }
     stop() {
         // 이 메서드 역시 CurrentTime클래스의 필요에 의해 추가했다.
